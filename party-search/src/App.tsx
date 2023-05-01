@@ -58,7 +58,6 @@ function App() {
 			if (queryString) {
 				performSearch(queryString);
 			} else {
-				console.log("resetting");
 				setParties(allParties.slice());
 			}
 		});
@@ -66,10 +65,8 @@ function App() {
 	}, [watch, miniSearch.current, allParties]);
 
 	function addParty() {
-		console.log("adding party");
 		let newParty = generateRandomParty(partyDatabase.size);
 
-		console.log(allParties);
 		partyDatabase.set(newParty.id, newParty);
 
 		let newParties = [...allParties, newParty];
