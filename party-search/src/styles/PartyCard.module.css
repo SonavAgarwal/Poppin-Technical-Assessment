@@ -27,7 +27,7 @@
 	transition: all 0.3s ease;
 
 	box-shadow: #c11fd630 0.5rem 0.5rem 3rem, #52b3fb20 -0.5rem -0.5rem 3rem;
-	animation: rotatingshadow 2s linear 0s infinite;
+	animation: rotatingshadow 3s linear 0s infinite;
 
 	filter: brightness(0.8);
 }

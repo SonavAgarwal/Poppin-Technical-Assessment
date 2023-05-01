@@ -36,15 +36,9 @@ const PartyCard = ({ party, index }: PartyProps) => {
 					</div>
 				</div>
 				<div className={styles.infoContainer}>
-					{/* <p> */}
 					<span className={styles.price}>${party.price}</span>{" "}
 					<span className={styles.date}>{formatDate(party.startDate)}</span>
-					{/* </p> */}
 				</div>
-				{/* {party.name} */}
-
-				{/* <h1 className={styles.name}>{party.name}</h1> */}
-				{/* {party.startDate.toLocaleDateString()} · {party.price} */}
 			</div>
 		</AnimateHeight>
 	);

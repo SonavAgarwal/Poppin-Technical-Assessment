@@ -90,7 +90,7 @@ export function generateRandomParty(id: number) {
 	const newParty: Party = {
 		name: generatePartyName(),
 		banner: new URL(getRandomBannerUrl()),
-		price: Math.floor(Math.random() * 1000),
+		price: Math.floor(Math.random() * 100),
 		startDate: generateRandomDate(),
 		id: id,
 	};

@@ -1,10 +1,8 @@
 .page {
-	background-color: black;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
 	min-height: 100vh;
 }
 
@@ -12,7 +10,6 @@
 	font-size: 3rem;
 	font-weight: bold;
 	margin-top: 2rem;
-	/* text-transform: uppercase; */
 }
 
 .form {
@@ -100,6 +97,10 @@
 	animation: rotatingshadow 2s linear 0s infinite;
 }
 
+.newPartyButton:hover {
+	background-color: rgb(61, 61, 61);
+}
+
 @keyframes rotatingshadow {
 	0% {
 		box-shadow: #c11fd630 0.5rem 0.5rem 3rem, #52b3fb20 -0.5rem -0.5rem 3rem;
@@ -116,4 +117,22 @@
 	100% {
 		box-shadow: #c11fd630 0.5rem 0.5rem 3rem, #52b3fb20 -0.5rem -0.5rem 3rem;
 	}
+}
+
+.clearButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 3.5rem;
+	width: 5rem;
+	background-color: transparent;
+	color: white;
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+	font-size: 1.5rem;
+	outline: none;
+	border: none;
+}
+.clearButton:hover {
+	opacity: 1;
 }
