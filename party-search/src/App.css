@@ -1,0 +1,19 @@
+:root {
+	font-family: "Arial", "Raleway", sans-serif;
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+#tsparticles > canvas {
+	/* opacity: 0.2; */
+	/* -webkit-filter: blur(10px); */
+	/* -webkit-filter: none; */
+	filter: blur(25rem);
+}
+
+.particlesContainer {
+	/* filter: hue-rotate(10deg); */
+}
