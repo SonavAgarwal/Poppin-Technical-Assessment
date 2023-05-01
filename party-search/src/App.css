@@ -11,7 +11,7 @@ body {
 	/* opacity: 0.2; */
 	/* -webkit-filter: blur(10px); */
 	/* -webkit-filter: none; */
-	filter: blur(25rem);
+	filter: blur(15rem);
 }
 
 .particlesContainer {

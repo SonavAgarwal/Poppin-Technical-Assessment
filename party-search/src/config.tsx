@@ -38,7 +38,7 @@ export const backgroundParticleConfig: IParticlesProps = {
 	options: {
 		particles: {
 			number: {
-				value: 0, // TODO
+				value: 3, // TODO
 			},
 			color: {
 				value: ["#C21FD6", "#8F64E9", "#52B3FB"],
@@ -60,7 +60,7 @@ export const backgroundParticleConfig: IParticlesProps = {
 			},
 			move: {
 				enable: true,
-				speed: 6,
+				speed: 3,
 				direction: "none",
 				random: false,
 				straight: false,

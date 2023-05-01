@@ -29,22 +29,17 @@ const PartyCard = ({ party, index }: PartyProps) => {
 			>
 				<div className={styles.imageContainer}>
 					<img className={styles.image} src={party.banner.toString()} />
-					<div className={styles.dateContainer}>
-						<div
-							className={styles.date}
-							// style={{ backgroundImage: `url(${party.banner.toString()})` }}
-						>
-							<h1>
-								{party.name}
-								{/* {party.startDate.toDateString()} */}
-							</h1>
+					<div className={styles.nameContainer}>
+						<div className={styles.name}>
+							<h1>{party.name}</h1>
 						</div>
 					</div>
 				</div>
 				<div className={styles.infoContainer}>
-					<p className={styles.name}>
-						{formatDate(party.startDate)} - ${party.price}
-					</p>
+					{/* <p> */}
+					<span className={styles.price}>${party.price}</span>{" "}
+					<span className={styles.date}>{formatDate(party.startDate)}</span>
+					{/* </p> */}
 				</div>
 				{/* {party.name} */}
 

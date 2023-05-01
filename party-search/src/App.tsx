@@ -23,7 +23,7 @@ type SearchData = {
 
 const partyList: Party[] = [
 	{
-		name: "Midnight Madness",
+		name: "Midnight Slay",
 		startDate: new Date(2023, 3, 2, 3, 0),
 		price: 13,
 		banner: new URL(
