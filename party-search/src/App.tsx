@@ -26,6 +26,7 @@ function App() {
 	const { register, handleSubmit, watch, reset } = useForm<SearchData>();
 	const onSubmit = (data: any) => console.log(data);
 
+	const [allParties, setAllParties] = useState<Party[]>(partyList);
 	const [parties, setParties] = useState<Party[]>(partyList);
 
 	const initMiniSearch = useCallback(() => {
@@ -57,23 +58,27 @@ function App() {
 			if (queryString) {
 				performSearch(queryString);
 			} else {
-				setParties(partyList);
+				console.log("resetting");
+				setParties(allParties.slice());
 			}
 		});
 		return () => subscription.unsubscribe();
-	}, [watch, miniSearch.current]);
+	}, [watch, miniSearch.current, allParties]);
 
 	function addParty() {
 		console.log("adding party");
 		let newParty = generateRandomParty(partyDatabase.size);
 
+		console.log(allParties);
 		partyDatabase.set(newParty.id, newParty);
 
-		let newParties = [...parties, newParty];
+		let newParties = [...allParties, newParty];
 
 		miniSearch.current.add(newParty);
 
 		setParties(newParties);
+		setAllParties(newParties);
+		reset({ query: "" });
 	}
 
 	const particlesInit = useCallback(async (engine: Engine) => {
