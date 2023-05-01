@@ -8,14 +8,10 @@ import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
 import { backgroundParticleConfig, champagneConfig, partyList } from "./config";
 
-import MiniSearch, { Query } from "minisearch";
+import MiniSearch from "minisearch";
 
 import { debounce } from "debounce";
-import { generateRandomParty, getRandomBannerUrl } from "./utils";
-
-function sleep(ms: number) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
+import { generateRandomParty } from "./utils";
 
 type SearchData = {
 	query: string;
