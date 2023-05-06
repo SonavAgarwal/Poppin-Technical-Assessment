@@ -12,6 +12,7 @@ import MiniSearch from "minisearch";
 
 import { debounce } from "debounce";
 import { generateRandomParty } from "./utils";
+import NewApp from "./NewApp";
 
 type SearchData = {
 	query: string;
@@ -132,6 +133,7 @@ function App() {
 				New Party
 			</button>
 		</div>
+		// <NewApp></NewApp>
 	);
 }
 
